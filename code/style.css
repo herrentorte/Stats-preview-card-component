@@ -8,15 +8,24 @@ body {
   height: 100%;
 }
 
+#body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .container {
-  position: fixed;
+  border-radius: 10px;
+  position: relative;
   top:50%;
+  transform:translateY(-50%);
   background-color: hsl(244, 38%, 16%);
-  margin-top: -223px;
   text-align: left;
   color: white;
   width: 1080px;
   height: 446px;
+  margin: auto;
+  overflow:hidden;
   }
 
 .card-outline {
@@ -24,36 +33,38 @@ body {
   margin: 5%;
   float: left;
   width: 40%;
-}
+  height: 80%;
+  }
 
 .text-highlight {
   color: hsl(277, 64%, 61%);
 }
 
-.card-outline p {
-  color: rgb(193,191,213);
+p {
+  color: white;
+  opacity: 0.6;
   }
 
 .container img {
-  opacity: 0.5;
+  opacity: 0.4;
   object-fit: cover;
   }
 
 .veil {
-  width: 50%;
   float: left;
   width: 50%;
   height: 100%;
-  background-color: hsla(277, 64%, 61%, 1);
+  background-color: hsla(277, 90%, 30%, 1);
 }
 
 #stats {
-  width: 50%;
-}
+  padding-top: 10%;
+  bottom: 10px;
+  }
 
 .stat {
   float: left;
-  width: 30%;
+  width: 33%;
 }
 
 .stat p {
